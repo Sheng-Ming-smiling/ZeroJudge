@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int tn; //tn 表示現在時間
+
+    cin >> tn;
+    if(tn <= 25)
+    {
+        cout << 25-tn << endl; 
+    }
+    else
+    {
+        cout << 85-tn<<endl; // 由60-tn+25化簡而來 60-tn 現在大於25 到 60分的距離 加上 25分 下一個25分的固定時間
+    }
+
+
+}
