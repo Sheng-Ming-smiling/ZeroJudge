@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num,num12,numsolo; //<- num12 表示一打50元的量 numsolo表示剩於一隻5元
+    cin >> num;
+    num12 = num / 12 ; //<- 多少組12人
+
+    numsolo = num % 12; //<- % 取餘數
+
+    cout << num12 * 50 + numsolo * 5;
+    return 0;
+}
