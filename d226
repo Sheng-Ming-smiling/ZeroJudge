@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int V,t;
+    while(cin >> V >> t)// 畫V-t圖比較清楚 下方有解釋
+    {
+        cout << 2*t*V << endl; // 
+    }
+// 等加速度運動 時間間隔相同，則V的變化量相同 V = v0 + at
+// 在該斜直線上T 2T 處向上做記號 並在t處的V做一橫虛線
+// 你會發現一個全等三角形，所以2T時的位移量 = 圖下面積 = 2T * V
+// 那個V是T時的V
+}
