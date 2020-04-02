@@ -1,0 +1,18 @@
+#include <iostream>
+
+#include <math.h> // <--為了有根號(sqrt) 所以引進這個函式庫
+using namespace std;
+
+int main()
+{
+    int s1,s2,s3,price,area,S;
+
+        while (cin >> s1 >> s2 >> s3)
+    {
+        S = ( s1 + s2 + s3 ) / 2 ; // <- 海龍公式
+        area = S * (S - s1) * (S - s2) * (S - s3);
+        cout << area << endl;
+    }
+
+        return 0;
+}
