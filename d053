@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int m,n; // m*n的巧克力
+
+    while (cin >> m >> n) // 4*3的巧克力要切11刀 (畫圖!)
+    {
+        cout << m*n-1 << endl; 
+         
+         // 首先 邊長m 的要切 m-1 刀
+         // 會剩下 m 個 邊長為 1*N  長條巧克力
+         // 所以每個都要切 n-1 刀 共計 M*(N-1) 刀
+         
+         // 總結 (m-1) + (n-1)*m
+         
+         // 化簡 M-1 + mn -m => M *N -1 
+
+    }
+
+    return 0;
+}
