@@ -1,0 +1,19 @@
+#include <iostream>
+
+#include <iomanip> // 控制小數點的一個函式所在的函示庫
+
+using namespace std;
+
+int main()
+{
+    double degree, d2; // degree指華氏 d2指攝氏 溫度用浮點數(因為不一定是整數，用double把小數範圍加大 float不夠用)
+
+    while (cin >> degree)
+    {
+        d2 = (degree-32) * 5 / 9 ; // 華氏轉攝氏的公式
+
+        cout << fixed << setprecision(3) << d2 << endl; // 請參考d051-補充說明
+    }
+
+    return 0;
+}
