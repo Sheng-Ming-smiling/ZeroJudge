@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    long long int a,b,ans; // a b 表示兩方士兵數量 此為解法2 ans 為兩方差距
+
+    while(cin >> a >> b) //迴圈輸入ab
+    {
+        ans = a-b; //先令ans = a-b (可能正 可能負)
+
+        if(ans < 0) //(如果負數)
+        {
+            ans = -ans; // 那就乘以負號
+        }
+        cout << ans << endl;
+    }
+
+return 0;
+}
