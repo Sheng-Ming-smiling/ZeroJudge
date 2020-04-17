@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    long long int a,b,c; // 三個非負整數 a b c 改用long long int 避免溢位
+
+    while(cin >> a >> b >> c) // 迴圈 輸入 a b c
+    {
+        if(a>=b && a>=c) // 如果a >= b 且 a >= c 那a就是最大的 所以輸出ａ !用大於等於 避免有兩個一樣大的最大值!
+        {
+           cout << a << endl;
+        }
+
+        else if(b>=a && b>=c) // 同理 (附註 改用大於等於後 三數相同的情形會在第1個if輸出
+        {
+           cout << b << endl;
+        }
+
+        else if(c >= a && c >= b) // 同理
+        {
+           cout << c << endl;
+        }
+    }
+
+    return 0;
+}
