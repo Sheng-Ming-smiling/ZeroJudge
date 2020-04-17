@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    long long int a,b; // a b 表示兩方士兵數量
+
+    while(cin >> a >> b) //迴圈輸入ab
+    {
+        if (a <= b)  // 如果b比較大 那就b-a (為了輸出正數)
+        {
+            cout << b-a << endl;
+        }
+
+
+        else // 反之 就是比較大 所以a-b (為了輸出正數)
+
+        {
+            cout << a-b << endl;
+        }
+
+    }
+
+return 0;
+}
