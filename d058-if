@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    long long int a; // 題目輸入一個整數a (此為使用if的做法)
+
+    while(cin >> a) //迴圈輸入a
+    {
+        if (a < 0) //如果a為負數 輸出-1
+        {
+            cout << -1 << endl;
+        }
+
+        else if (a == 0) //如果a恰等於0 輸出0
+        {
+            cout << 0 << endl;
+        }
+
+        else if (a > 0) //如果a為正數 輸出1
+        {
+            cout << 1 << endl;
+        }
+
+    }
+
+return 0;
+}
