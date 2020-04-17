@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int MAX = 0,a; // max預設為0 輸入整數a
+    
+    for(int i=0;i<3;i++)  //for 迴圈3次
+        {
+            cin>>a;  // 輸入一數
+        
+            MAX = max(MAX,a); // max函式-max會回傳()內的最大值
+        }
+    cout<<MAX;  // 比較結束
+
+return 0;
+}
