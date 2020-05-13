@@ -1,0 +1,46 @@
+if {條件判斷1}
+else if {條件判斷2}
+else {條件判斷 非1 且 非2}
+這樣是ok的 ow<
+邏輯沒有錯 要上面不符合才會往下跑
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int h,m; // h為小時 m為分鐘 且 h在0~23 而 m 在 0~60 之間 (這題先不用判斷合理性 應該可以w)
+
+    while (cin >> h >> m)
+
+        if (h < 7) // 如果在7點前 不在學校
+        {
+            cout << "Off School" << endl;
+        }
+
+        else if ( h ==  7) // 如果在7點時
+        {
+            if(m < 30) // 又如果在7點30(不包含7:30)前 則不在學校
+            {
+                cout << "Off School" << endl;
+            }
+
+            else // 7:30 後要在校
+            {
+                cout << "At School" << endl; // 如果在7:30之後 要在學校
+            }
+        }
+
+        else if ( h < 17) // 如果 在 7點~17點(不含17)之間 要在學校
+        {
+            cout << "At School" << endl;
+        }
+
+        else // 在17點(包含17點)之後 放學
+        {
+            cout << "Off School" << endl;
+        }
+
+    return 0;
+}
