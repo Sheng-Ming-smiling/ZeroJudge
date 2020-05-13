@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main() // 少一個{ XD
+{
+    int year; // 輸入年分(year)
+              // 閏年定義: 西元年 1.被4整除且不被100整除
+              //                  2.被400整除者         滿足其一即為閏年
+
+    while(cin >> year)
+    {
+        if(year % 400 == 0) //如果被400整除 是閏年
+            {
+                cout << "閏年" << endl;
+            }
+
+        else if(year % 4 == 0) //如果被4整除
+            {
+                if(year % 100 == 0) // 又被100整除的話
+                {
+                    cout << "平年" << endl; //為平年
+                }
+                else // 被4整除但不被100整除
+                {
+                cout << "閏年" << endl; // 閏年
+                }
+            }
+
+        else // 不被400整除 又不被4整除 為平年
+        {
+            cout << "平年" << endl;
+        }
+    }
+
+}
