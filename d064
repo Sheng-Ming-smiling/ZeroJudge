@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+    int a; // 輸入一整數a
+
+    while(cin >> a){
+
+        if(a % 2 == 0) // 如果a對2取餘數為0 (即 a能被2整除 即a為偶數 )
+        {
+            cout << "Even" << endl;
+        }
+
+        else //非偶數 => 就是奇數
+        {
+            cout << "Odd" << endl;
+        }
+
+    }
+
+    return 0;
+}
